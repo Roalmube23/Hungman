@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego del Ahorcado</h1>
+        <div class="settings">
+            <label for="category">Categoría:</label>
+            <select id="category">
+                <option value="figuras">Figuras</option>
+                <option value="paises">Países</option>
+                <option value="colores">Colores</option>
+            </select>
+            <label for="difficulty">Dificultad:</label>
+            <select id="difficulty">
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+            <button id="start-game">Iniciar Juego</button>
+        </div>
+        <div class="game">
+            <canvas id="hangman-canvas" width="200" height="200"></canvas>
+            <div id="word-container"></div>
+            <div id="message"></div>
+            <div id="wrong-letters"></div>
+            <div class="keyboard">
+                <div class="keyboard-grid"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
